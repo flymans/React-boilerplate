@@ -1,10 +1,18 @@
 import React from 'react';
-import './App.css';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+    background: blue;
+`;
+
+const Title = styled.h1`
+    color: white;
+`;
 
 const App = () => (
-    <div className="App">
-        <h1>React Boilerplate</h1>
-    </div>
+    <Wrapper>
+        <Title>React Boilerplate</Title>
+    </Wrapper>
 );
 
 export default App;
