@@ -1,13 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Wrapper = styled.div`
-    background: blue;
-`;
-
-const Title = styled.h1`
-    color: white;
-`;
+import {Wrapper, Title} from './styled';
 
 const App = () => (
     <Wrapper>
