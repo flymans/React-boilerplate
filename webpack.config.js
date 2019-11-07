@@ -5,7 +5,7 @@ const config = {
     entry: './src/index.js',
     output: {
         path: resolve(__dirname, 'public'),
-        filename: 'index-bundle.js'
+        filename: '[name].js'
     },
     module: {
         rules: [
@@ -23,9 +23,9 @@ const config = {
     ],
     resolve: {
         alias: {
-            api: resolve(__dirname, 'src/api/'),
-            assets: resolve(__dirname, 'src/assets/'),
-            components: resolve(__dirname, 'src/components/')
+            Api: resolve(__dirname, 'src/api/'),
+            Assets: resolve(__dirname, 'src/assets/'),
+            Components: resolve(__dirname, 'src/components/')
         }
     }
 };
